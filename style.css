@@ -10,7 +10,7 @@ body{
 .main-dino{
   background-color: #688E26;
   width: 100vw;
-  height:calc(100vh - 170px);
+  height:calc(100vh - 290px);
   position: relative;
 
 }
@@ -19,7 +19,7 @@ body{
   scale: 2.6;
   position: absolute;
   left: 40vw;
-  top: 40vh;
+  bottom: 70px;
 }
 
 
@@ -36,11 +36,11 @@ body{
   display: flex;
   justify-content: center;
   font-size: 42px;
-  color: wheat;
+  color: white;
 }
 .subtitle{
   display: inherit;
-  color: #4171eb;
+  color: white;
   font-size: 30px;
   justify-content: center;
 }
@@ -61,3 +61,5 @@ body{
   border-radius: 10px;
   padding-top: 10px;
 }
+
+/* resposive movil */
