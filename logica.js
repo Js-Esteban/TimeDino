@@ -8,7 +8,6 @@ function checkTime(){
   var data = new Date()
   // Crear una nueva fecha
   const fechaFutura = new Date('2024-02-24T00:00:00Z');
-
   let result = fechaFutura - data
 
   const days = calculateDays(result);
@@ -18,11 +17,15 @@ function checkTime(){
   const minutes = Math.floor((result % (1000 * 60 * 60)) / (1000 * 60));
 
   const seg = Math.floor((result % (1000  * 60)) / (1000));
-
+  
   cardDays.innerHTML = days;
   cardHours.innerHTML = hours;
   cardMin.innerHTML = minutes;
   cardSeg.innerHTML = seg;
+  
+  if(!result){
+    alert("Hola Sorpresa ")   //condition for time = 0 alert 
+  }
 }
 setInterval("checkTime()",1000) 
 
